@@ -1,11 +1,12 @@
-import sys, os
+import sys, os, getpass
 from crontab import CronTab
 
 # command: 'python autoset.py' 
 AUTOSET = '/usr/bin/python ' + os.getcwd() + '/autoset.py'
 
-# TODO: Obtain the username differently
-username = raw_input('Input yout username: ')
+
+username = getpass.getuser()
+
 
 # Schedule the command
 # TODO: Obtain the hour of the day diffetently
