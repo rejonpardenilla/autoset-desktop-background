@@ -19,5 +19,10 @@ Also you can make a cronjob in your system, this tells your computer to execute 
 $ python cron.py
 ```
 
+To remove the cronjob, simply:
+```sh
+$ crontab -r
+```
+
 ## License
 MIT
